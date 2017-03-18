@@ -12,6 +12,8 @@
 @main("Welcome to Play") {
 
 <div class="row">
+
+
  <div class="jumbotron text-center ">
   <h1>Welcome</h1>
   <p>Login/Signup Application</p>
@@ -46,7 +48,7 @@
       </div>
 
       <div class="tab-pane fade active in" id="signin">
-       <form class="form-Vertical">
+       <form class="form-Vertical" action="@routes.Login.processForm()" method="post">
         <fieldset>
          <!-- Sign In Form -->
          <!-- Text input-->
@@ -84,7 +86,7 @@
       </div>
 
       <div class="tab-pane fade" id="signup">
-       <form class="form-Vertical">
+       <form class="form-Vertical" action="@routes.SignupController.addUser()" method="post">
         <fieldset>
          <!-- Sign Up Form -->
          <!-- Text input-->

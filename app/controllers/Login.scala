@@ -4,9 +4,9 @@ import play.api._
 import play.api.mvc._
 
 @Singleton
-class SignupController @Inject() extends Controller {
+class Login @Inject() extends Controller{
 
-  def addUser = Action {
+  def processForm = Action {
     Ok(views.html.profile())
   }
 
